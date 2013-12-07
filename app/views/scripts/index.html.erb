@@ -1,0 +1,12 @@
+Hello
+
+
+<% @scripts.each do |script| %>
+
+<%= link_to script.title,  script_path(id) %> 
+
+
+<% end %>
+
+
+<p><%= link_to "Add new script", new_script_path %></p>
