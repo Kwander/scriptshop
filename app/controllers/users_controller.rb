@@ -35,8 +35,12 @@ def create
 				if @user.save
 				
 				redirect_to users_path, :notice => "User created"
+				flash[:notice] = "Welcome aboard!"
+				flash[:color] = valid
 				
 				else
+				 flash[:notice] = "Something went wrong - recheck the field, will you?"
+                 flash[:color]= "invalid"
 				
 				render "new"
 				
