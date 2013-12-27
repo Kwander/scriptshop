@@ -7,6 +7,7 @@ Scriptshop::Application.routes.draw do
   
   
   resources :scripts
+  resources :users
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'

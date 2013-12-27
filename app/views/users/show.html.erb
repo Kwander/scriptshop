@@ -1,0 +1,7 @@
+<p>Username: <%= @user.username %></p>
+<p>Email: <%= @user.email %></p>
+
+
+<% #if author %>
+<%= link_to "Edit", edit_user_path(@user) %>
+<%= link_to "Delete", @user, :confirm => "Are you sure??", :method => :delete %>

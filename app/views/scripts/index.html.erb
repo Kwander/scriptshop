@@ -1,12 +1,16 @@
 Hello
 
 
+
+<ul>
 <% @scripts.each do |script| %>
 
-<%= link_to script.title,  script_path(id) %> 
+
+
+<li><%= link_to script.title,  script %></li>
 
 
 <% end %>
-
+</ul>
 
 <p><%= link_to "Add new script", new_script_path %></p>

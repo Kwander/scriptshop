@@ -1,0 +1,7 @@
+<p><%= @script.title %></p>
+<p><%= @script.description %></p>
+<p>Kaina: <%= @script.price %> lt</p>
+
+<% #if author %>
+<%= link_to "Edit", edit_script_path(@script) %>
+<%= link_to "Delete", @script, :confirm => "Are you sure??", :method => :delete %>

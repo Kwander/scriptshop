@@ -1,0 +1,7 @@
+<%= form_for @script do |script| %>
+
+<p>Pavadinimas: <%= script.text_field :title %> </p>
+<p>Aprašymas: <%= script.text_area :description %> </p>
+<p>Kaina: <%= script.text_field :price %> </p>
+<p> <%= script.submit "Skelbti" %> </p>
+<% end %>

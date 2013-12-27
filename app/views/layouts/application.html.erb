@@ -7,8 +7,13 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
+<p><%= link_to "Visi skriptai", scripts_path %></p>
+<p><%= link_to "Visi vartotojai", users_path %></p>
+
+
 
 <%= yield %>
+
 
 </body>
 </html>
